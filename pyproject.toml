@@ -4,9 +4,12 @@ version = "0.1.0"
 description = "CSV importer for EverBank exports into Simplifi"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "click>=8.1.7",
+]
 
 [dependency-groups]
 dev = [
     "pytest>=8.3.4",
+    "ruff>=0.9.6",
 ]

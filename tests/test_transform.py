@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 import pytest
-from main import transform_csv
+from transform_csv import transform_csv
 
 
 @pytest.fixture
@@ -27,7 +27,7 @@ def expected_output():
     return results
 
 
-def test_transform_csv(input_csv, output_csv, expected_output, tmp_path):
+def test_transform_csv(input_csv, expected_output, tmp_path):
     # Create a temporary output file
     temp_output = tmp_path / "test_output.csv"
 
